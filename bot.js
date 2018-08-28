@@ -28,7 +28,7 @@ client.user.setGame(`Streming`,"Manager")
   console.log('')
 });
 
-const Discord = require("discord.js");
+const discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -42,7 +42,7 @@ client.on('message', msg => {
 });
 
 client.on('ready',  () => {
-  console.log('By : عنان اوفر ');
+  console.log('By : Mr.LOVE ');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
