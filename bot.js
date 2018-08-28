@@ -118,10 +118,6 @@ client.on("message", message => {
 
 💎!members 『معلومات عن الاعضاء』
 
-💎!embed 『خاصيه غرد لكن بغير طريقه』
-
-💎!animal  『كود لي اضهار صور  للحيوانات』
-
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
 👑『اوامر ادارية』👑
@@ -181,16 +177,6 @@ client.on("message", message => {
 🎎 ترحيب 7 / ترحيب 8
 
 🎎 ترحيب 9 / ترحيب 10
-
-● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
-
-💎『الدعم الفني والمساعدة』💎
-
-!invite | القسم الاول لي اضافه البوت 
-
-!support| القسم الثاني  الدعم الفني و المساعدة
-
-القسم الثالث مصمم البوت | @iTzAnan_Over#3412
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
@@ -371,35 +357,6 @@ if (message.content.startsWith("!cv")) {
     
 }
 });
-
-client.on('message', message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-// !say
-  if (command === "say") {
-          message.delete()
-    message.channel.sendMessage(args.join(" ")).catch(console.error);
-  }
-  
- 
-
-if (command == "embed") {
-    let say = new Discord.RichEmbed()
-    .setDescription(args.join("  "))
-    .setColor(0x23b2d6)
-    message.channel.sendEmbed(say);
-    message.delete();
-  }
-
-
-});
-
 
    client.on("message", message => {
     const prefix = "!"
@@ -663,31 +620,6 @@ if (message.content === '!support') {
 
 client.on('message', message => {
      if (message.content === "!support") {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#9B59B6")
-  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
-     
-     
-     
-  message.channel.sendEmbed(embed);
-    }
-});
-
-
-client.on('message', message => {
-  if (true) {
-if (message.content === '!invite') {
-      message.author.send(' رابط البوت |  https://discordapp.com/api/oauth2/authorize?client_id=469548363399036946&permissions=2146958583&scope=bot ').catch(e => console.log(e.stack));
-
-    }
-   } 
-  });
-  
-  
-
-client.on('message', message => {
-     if (message.content === "!invite") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
